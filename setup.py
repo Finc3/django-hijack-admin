@@ -31,8 +31,6 @@ import os
 from setuptools import setup, find_packages
 import hijack_admin as app
 
-dev_requires = ['flake8', ]
-
 
 def read(fname):
     try:
@@ -54,7 +52,6 @@ setup(name="django-hijack-admin",
       packages=find_packages(),
       include_package_data=True,
       install_requires=open('requirements.txt').read().split('\n'),
-      extras_require={'dev': dev_requires, },
       classifiers=['Development Status :: 5 - Production/Stable',
                    'Framework :: Django',
                    'License :: OSI Approved :: MIT License',
